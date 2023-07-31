@@ -1,1 +1,19 @@
 # config-app-yml
+```
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8089/eureka/
+  instance:
+    hostname: localhost
+
+microservice:
+  user:
+    endpoints:
+      endpoint: http://USER-MS/api/user/
+  department:
+    endpoints:
+      endpoint: http://FLAT-MS/api/flat/
+```
